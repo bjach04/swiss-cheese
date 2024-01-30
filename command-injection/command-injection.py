@@ -1,6 +1,6 @@
 import os
 
-filename = input("Please provide a file name to search and display:\n")
+filename = input("ComInjection.txt")
 
-command = "cat " + filename
+command = "cat " + ComInjection.txt
 os.system(command)
