@@ -2,6 +2,9 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
+def sanitize_input(input_string):
+    return input_string_replace('<', '&lt;').replace('>', '&gt;')
+
 @app.route('/', methods=['GET', 'POST'])
 def index():
     user_input = ''
